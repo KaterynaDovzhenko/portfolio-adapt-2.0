@@ -125,6 +125,7 @@
         <div class="container about__container">
           <span data-speed=".9" class="span-bg">hello</span>
           <span data-speed="1.1" class="span-bg about__span-bg-second">hello</span>
+           <span data-speed="1.2" class="span-bg about__span-bg-third">hello</span>
           <h2 class="section-title about__title">Who am I</h2>
           <p class="paragraph about__paragraph">what I do</p>
 
@@ -298,19 +299,21 @@
       <p class="ideas__text-btn">contact me</p></div>
         </div>
       </section>
-      <section class="section" id="skills">
+      <section class="section skills__section" id="skills">
         <div class="container">
           <div class="skills__container">
             <div class="skills__left-container">
               <h2 class="section-title skills__title">My story...</h2>
              <ul class="skills__list">
               <li>I always was curious about technologies and different industries which exist nowadays. I tried a lot of things to figure out what is my dream job. So, I am here now. </li>
-              <li>I thrive as a professional web developer in turning complicated concepts into elegant code. I've become proficient in many technologies over the years, ranging from HTML and CSS to JavaScript and beyond. </li>
+             <span id="more"> <li>I thrive as a professional web developer in turning complicated concepts into elegant code. I've become proficient in many technologies over the years, ranging from HTML and CSS to JavaScript and beyond. </li> <span id="dots">...</span>
               <li>My journey into UI/UX design unlocked a whole new universe of artistic opportunities. I've studied typography, colour theory, and human behaviour psychology as I realize that design is about creating intuitive, interesting experiences rather than just pretty things. I enjoy creating interfaces that strike a pleasing mix between form and function, guiding users smoothly through their digital experiences, from wireframes to high-fidelity mockups. </li>
               <li>My ability to combine my technical expertise with efficient project management makes me unique. I am excellent at leading cross-functional teams to accomplish common objectives because I am a natural leader and communicator. </li>
               <li>I'm willing to work with you whether you're looking for a web developer who can make your ideas come to life, a UI/UX designer who can bring life to interfaces, or a project manager who can plan for success. Let's design engaging digital experiences that challenge conventions and boost your vision. I appreciate you looking at my portfolio. I urge you to look over my work and get in touch with me so we can talk about how we can make your upcoming project a reality.
-</li>
+</li></span>
              </ul>
+             <button class="btn__skills-more" id="btn-more" onclick="readMore()">more</button>
+
             
             </div>
        
