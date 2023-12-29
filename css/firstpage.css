@@ -360,7 +360,7 @@ canvas{
 
 @media (max-width: 768px) {
     .gallery {
-        margin-top: 180px;
+        margin-top: 150px;
     }
 }
 
@@ -561,6 +561,16 @@ canvas{
     margin-bottom: 20px;
 }
 
+ .ideas__paragraph {
+     margin-bottom: 50px;
+ }
+
+@media (min-width: 767px) {
+    .ideas__paragraph {
+        margin-bottom: 80px;
+    }
+}
+
 .ideas .paragraph {
     margin-bottom: 70px;
 }
@@ -575,11 +585,18 @@ canvas{
  
     display: flex;
 
-    width: 180px;
-    height: 60px;
+    width: 130px;
+    height: 50px;
     align-items: center;
     justify-content: center;
     z-index: -1;
+}
+
+@media (min-width: 768px) {
+    .main__btn-cotainer-ideas {
+        width: 180px;
+        height: 60px;
+    }
 }
 
 .card {
@@ -790,20 +807,16 @@ canvas{
     background-color: var(--sixth-color);
     filter: brightness(70%);
     
-    width: 369px;
-    height: 323px;
-    top: 43px;
-    left:185px;
-    z-index: -2;
+    width: 510px;
+    height: 671px;
+    top: -50px;
+    left: 85px;
+    z-index: -1;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 768px) {
 .skills__picture-container::after {
-        width: 510px;
-        height: 671px;
-        top: -50px;
-        left: 85px;
-        z-index: -1;
+        content: none;
     }
 }
 
@@ -822,5 +835,10 @@ canvas{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+
+}
+
+#more{
+  transition: display 1s ease-in-out;
 }
 
