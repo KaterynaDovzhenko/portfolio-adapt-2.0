@@ -602,14 +602,17 @@ canvas{
 .card {
     opacity: 0;
     width: 60px;
-    height: 60px;
-
+    height: 50px;
     transition: .6s cubic-bezier(.44, .5, .55, .56), .5s background-color cubic-bezier(.44, .5, .55, .56), .5s background-image cubic-bezier(.44, .5, .55, .56);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .card {
+        height: 60px;
+    }
 }
 
 .card .telega,
@@ -625,10 +628,6 @@ canvas{
     border-radius: 1px;
 
 } 
- .main__btn-cotainer-ideas:hover {
-
-     box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.147) inset;
- }
 
 .main__btn-cotainer-ideas:hover .ideas__text-btn {
       opacity: 0;
@@ -639,7 +638,6 @@ canvas{
     opacity: 0;
     z-index: -3;
 }
-
 
 .main__btn-cotainer-ideas:hover .telega,
 .main__btn-cotainer-ideas:hover .linktree,
