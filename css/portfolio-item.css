@@ -2,23 +2,54 @@
 
 .main-section{
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 767px) {
+.main-section {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .masfor__main-nav {
+        padding-bottom: 80px;
+    }
 }
 
 .port-item__img{
     margin-left: auto;
     margin-right: auto;
-    max-width: 896px;
+    max-width: 100%;
+}
+
+@media (min-width: 767px) {
+    .port-item__img {
+        max-width: 896px;
+    }
 }
 
 .port-item__sneaker{
     position: absolute;
-    top: 162px;
-    left: 625px;
+    top: 20%;
+    left: 35%;
+}
+
+@media (min-width: 767px) {
+    .port-item__sneaker {
+        top: 20%;
+        left: 45%;
+        }
 }
 
 .img__masfor-sneaker{
-    width: 794px;
+    width: 350px;
+}
+
+@media (min-width: 767px) {
+    .img__masfor-sneaker {
+        width: 794px;
+    }
 }
 
 .info__text{
@@ -34,18 +65,32 @@ p{
 
 .list-skills{
     justify-content: center;
-    margin-bottom: 120px;
-    padding: 50px 0;
-    margin-top: 90px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding: 30px 0;
     display: flex;
     gap: 38px;
     border-top: 1px solid var(--footer);
     border-bottom: 1px solid var(--footer);
 }
 
+@media (min-width: 767px) {
+    .list-skills {
+        margin-top: 90px;
+        margin-bottom: 120px;
+        padding: 50px 0;
+    }
+}
+
 .section-title.masfor{
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 400;
+}
+
+@media (min-width: 767px) {
+    .section-title.masfor {
+        font-size: 80px;
+    }
 }
 
 .colors{
@@ -56,10 +101,16 @@ p{
 .colors__masfor-item{
     overflow: hidden;
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
+@media (min-width: 767px) {
+    .colors__masfor-item {
+        width: 100px;
+        height: 100px;
+    }
+}
 
 
 .colors__masfor li:first-child {
@@ -82,7 +133,7 @@ p{
     align-items: center;
     justify-content: center; 
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     top: 0;
     width: 100%;
     height: 100%;
@@ -91,12 +142,15 @@ p{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 767px) {
+    .colors__masfor-id-color {
+        font-size: 16px;
+    }
+}
+
 .colors__masfor > .colors__masfor-item:not(:first-child) > .colors__masfor-id-color > p{
     color: var(--forth-color);
 }
-
-
-
 
 .colors__masfor-item:hover .colors__masfor-id-color,
 .colors__masfor-item:focus .colors__masfor-id-color {
@@ -113,10 +167,24 @@ p{
     margin-top: 170px;
 }
 
+@media (max-width: 768px) {
+    .masfor__mockup {
+        max-width: 400px;
+    }
+}
+
 .mockup-iph__masfor {
     position: absolute;
-    top: 205px;
-    left: 870px;
+    max-width: 145px;
+    top: 26%;
+    left: 65%;
+}
+
+@media (min-width: 767px) {
+.mockup-iph__masfor {
+        top: 205px;
+        left: 870px;
+    }
 }
 
 
@@ -131,6 +199,6 @@ p{
     margin-top: 100px;
 }
 
-footer{
-    margin-top: 130px;
+.masfor__footer{
+    padding-top: 30px;
 }

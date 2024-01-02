@@ -16,12 +16,10 @@
     position: relative;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 768px) {
     .gallery-item {
-            filter: brightness(75%);
-            width: 100%;
-            height: 100%;
-            position: relative;
+        animation: fadeInUp;
+        animation-duration: 7s;
         }
 }
 
