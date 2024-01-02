@@ -828,7 +828,7 @@ img {
     height: 40px;
     transform: none;
     top: -5px;
-    left: -115%;
+    left: -165%;
     z-index: -1;
     background-color: var(--third-color);
 
