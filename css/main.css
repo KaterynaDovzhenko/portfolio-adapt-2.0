@@ -867,15 +867,30 @@ canvas{
 }
 
 .title__coming-soon{
-    padding-left: 350px;
-    padding-top: 350px;
+    margin-top: 85%;
+    margin-left: 12%;
     pointer-events: none;
 }
 
+@media (min-width: 767px) {
+    .title__coming-soon {
+        margin-top: 25%;
+        margin-left: 20%;
+    }
+}
+
 .span__coming-soon{
-        pointer-events: none;
+    top: 57%;
+    left: 70%;
+
+    pointer-events: none;
     position: absolute;
-        top: 470px;
-        left: 1005px;
     margin-bottom: 0;
+}
+
+@media (min-width: 767px) {
+    .span__coming-soon {
+        top: 60%;
+        left: 72%;
+    }
 }
