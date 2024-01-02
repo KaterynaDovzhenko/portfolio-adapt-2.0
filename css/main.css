@@ -618,7 +618,7 @@ img {
 
 .list-nav {
     text-align: center;
-    margin: 80px auto;
+    margin: 80px auto 40px;
 }
 
 @media (min-width: 767px) {

@@ -28,8 +28,8 @@ canvas{
 
 .hero__title{
     position: relative;
-    margin-bottom: 290px;
-    padding-left: 50px;
+    margin-bottom: 45%;
+    margin-left: 5%;
 
     font-family: var(--main-font), sans-serif;
     text-transform: uppercase;
@@ -58,8 +58,8 @@ canvas{
     text-transform: uppercase;
     color: var(--accent-opacity);
     position: absolute;
-    bottom: -39px;
-    right: 53px;
+    bottom: -45%;
+    right: 5%;
     z-index: -1;
 }
 
