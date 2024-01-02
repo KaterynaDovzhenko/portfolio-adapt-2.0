@@ -62,8 +62,8 @@ body {
     max-width: 767px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .footer__portfolio.container{
@@ -290,12 +290,12 @@ img {
 }
 
 .footer__nav-list {
-    display: flex;
-    gap: 20px;
+    display: none;
 }
 
 @media (min-width: 767px) {
     .footer__nav-list {
+        display: flex;
             gap: 45px;
         }
 }
@@ -327,6 +327,7 @@ img {
     color: var(--footer);
     text-align: start;
     font-size: 5px;
+    display: block;
 }
 
 @media (min-width: 767px) {
@@ -359,30 +360,28 @@ img {
 }
 
 
-.footer__middle-container {
-    align-items: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-}
-
 @media (min-width: 767px) {
     .footer__middle-container {
+            align-items: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             max-width: 288px;
             gap: 20px;
         }
 }
 
-.footer__middle-container::after {
-    content: '';
-    position: absolute;
-    left: 431px;
-    background-color: var(--footer);
-    width: 1px;
-    height: 78px;
-
+@media (min-width: 767px) {
+    .footer__middle-container::after {
+            content: '';
+            position: absolute;
+            left: 431px;
+            background-color: var(--footer);
+            width: 1px;
+            height: 78px;
+    
+        }
 }
 
 .footer__social-media-list.social-media-list {
@@ -421,7 +420,7 @@ img {
 
 @media (max-width: 768px) {
     .footer__right-container {
-        margin-top: 10px;
+        margin-top: 20px;
         gap: 10px;
     }
 }
@@ -444,6 +443,7 @@ img {
 .footer__left-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 @media (min-width: 767px) {

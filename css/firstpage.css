@@ -19,7 +19,13 @@ canvas{
 
 .hero{
     padding-top: 140px;
-    padding-bottom: 270px;
+    padding-bottom: 340px;
+}
+
+@media (min-width: 767px) {
+    .hero {
+        padding-bottom: 270px;
+    }
 }
 
 .hero__content{
