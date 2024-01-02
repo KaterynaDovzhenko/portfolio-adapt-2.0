@@ -585,6 +585,7 @@ canvas{
  
     display: flex;
 
+    font-size: 16px;
     width: 130px;
     height: 50px;
     align-items: center;
@@ -594,6 +595,7 @@ canvas{
 
 @media (min-width: 768px) {
     .main__btn-cotainer-ideas {
+        font-size: 20px;
         width: 180px;
         height: 60px;
     }
