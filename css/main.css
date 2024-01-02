@@ -315,6 +315,7 @@ img {
 
 
 .footer__paragraph.paragraph {
+    color: var(--footer);
     text-align: center;
     margin: 0;
     font-family: Rufina, sans-serif;
@@ -328,6 +329,10 @@ img {
     .footer__paragraph.paragraph {
             font-size: 20px;
         }
+}
+
+.footer__middle-container a {
+    color: var(--footer);
 }
 
 
