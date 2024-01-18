@@ -162,6 +162,13 @@ canvas{
 
 @media (min-width: 767px) {
     .about__span-bg-second {
+        top: 35%;
+        left: 5%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .about__span-bg-second {
         top: 134px;
         left: 86px;
     }
@@ -174,7 +181,7 @@ canvas{
 }
 
 @media (min-width: 767px) {
-    .span-bg-third {
+    .about__span-bg-third {
         opacity: 0;
     }
 }
@@ -355,12 +362,24 @@ canvas{
     padding-top: 110px;
 }
 
+@media (min-width: 768px) and (max-width: 1279px) {
+    .works__container {
+        max-width: 920px;
+    }
+}
+
 
 
 @media (min-width: 768px) {
     .works__container>.section-title {
-            padding-bottom: 150px;
+            padding-bottom: 175px;
         }
+}
+
+@media (min-width: 1280px) {
+    .works__container>.section-title {
+        padding-bottom: 150px;
+    }
 }
 
 
@@ -371,6 +390,12 @@ canvas{
 @media (max-width: 768px) {
     .gallery {
         margin-top: 150px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .gallery {
+       gap: 60px;
     }
 }
 
@@ -700,11 +725,9 @@ canvas{
     position: relative;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .skills__container {
-            position: fixed;
             display: flex;
-            max-width: 1324px;
             height: 854px;
             gap: 70px;
             justify-content: center;
@@ -712,8 +735,10 @@ canvas{
         }
 }
 
-.skills__left-container {
-    max-width: 587px;
+@media (min-width: 768px) and  (max-width: 1279px) {
+    .skills__left-container {
+        margin-bottom: auto;
+    }
 }
 
 .skills__list li {
@@ -796,15 +821,23 @@ canvas{
     filter: brightness(80%);
     transition: .7s linear;
     cursor: pointer;
+    display: block;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1280px) {
     .skills__picture {
         position: absolute;
-        left: 165px;
-        top: 18px;
+        left: 55%;
+        top: 5%;
         z-index: -1;
-        opacity: 80%;
+        opacity: 40%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px){
+    .skills__picture {
+        left: -550px;
+        top: -380px;
     }
 }
 
@@ -829,6 +862,14 @@ canvas{
 @media (max-width: 768px) {
 .skills__picture-container::after {
         content: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .skills__picture-container::after {
+            top: -300px;
+            left: -475px;
+            z-index: -2;
     }
 }
 

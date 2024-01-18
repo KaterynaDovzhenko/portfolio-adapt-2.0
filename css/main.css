@@ -74,8 +74,8 @@ body {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        padding-left: 120px;
-        padding-right: 120px;
+        /* padding-left: 120px;
+        padding-right: 120px; */
     }
 }
 
@@ -268,7 +268,7 @@ img {
 
 
 /* ======================= FOOTER SECTION ======================= */
-
+/* 
 .footer {
     padding-top: 120px;
     padding-bottom: 20px;
@@ -466,9 +466,213 @@ img {
         max-width: 183px;
         font-size: 24px;
     }
+} */
+
+
+.footer {
+    padding-bottom: 20px;
+    padding-top: 120px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .footer {
+        padding-bottom: 60px;
+    }
 }
 
 
+@media (min-width: 1280) {
+    .footer__container {
+        justify-content: center;
+        display: flex;
+        gap: 269px;
+    }
+}
+
+.footer__nav-list {
+    display: none;
+}
+
+@media (min-width: 1280) {
+    .footer__nav-list {
+        display: flex;
+        gap: 45px;
+    }
+}
+
+@media (min-width: 1280) {
+    .footer__left-container {
+        max-width: 183px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+
+@media (min-width: 1280) {
+    .footer__left-container::after {
+        content: '';
+        position: absolute;
+        left: 327px;
+        background-color: var(--footer);
+        width: 1px;
+        height: 78px;
+    }
+}
+
+.footer__left-container .footer__paragraph.paragraph {
+    color: var(--footer);
+    text-align: start;
+    font-size: 5px;
+    display: block;
+}
+
+@media (min-width: 1280) {
+    .footer__left-container .footer__paragraph {
+        text-align: start;
+        font-size: 10px;
+    }
+}
+
+
+.footer__paragraph.paragraph {
+    color: var(--footer);
+    text-align: center;
+    margin: 0;
+    font-family: Rufina, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (min-width: 1280) {
+    .footer__paragraph.paragraph {
+        font-size: 20px;
+    }
+}
+
+.footer__middle-container a {
+    color: var(--footer);
+}
+
+
+@media (min-width: 1280) {
+    .footer__middle-container {
+        align-items: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 288px;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1280) {
+    .footer__middle-container::after {
+        content: '';
+        position: absolute;
+        left: 431px;
+        background-color: var(--footer);
+        width: 1px;
+        height: 78px;
+
+    }
+}
+
+.footer__social-media-list.social-media-list {
+    position: static;
+    flex-direction: row;
+}
+
+@media (min-width: 1280) {
+    .footer__social-media-list.social-media-list {
+        gap: 15px;
+    }
+}
+
+.footer__nav-list a {
+    transition: var(--transition-color);
+}
+
+.footer__nav-list a:hover {
+    color: var(--accent);
+}
+
+.tel-hover.footer__paragraph {
+    transition: var(--transition-color);
+}
+
+.tel-hover.footer__paragraph:hover {
+    color: var(--accent);
+}
+
+.footer__right-container {
+    max-width: 183px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width: 1279px) {
+    .footer__right-container {
+        margin-top: 20px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .footer__right-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.footer__social-media-svg {
+    fill: var(--footer);
+}
+
+.footer__social-media-svg:hover {
+    fill: var(--accent);
+}
+
+.footer__left-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1280) {
+    .footer__left-content {
+        display: flex;
+        gap: 269px;
+    }
+}
+
+
+
+.footer__title.title-third {
+    color: var(--footer);
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+@media (max-width: 1279px) {
+    .footer__title.title-third {
+        max-width: 183px;
+        font-size: 24px;
+    }
+}
 /* MENU BAR NAV */
 
 .main-nav {
